@@ -3,12 +3,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      brand: "#235784",
+      brand: "#F7FAFD",
       "bg-brand": "#fff",
       "room-details-bg": "#FEFEFE",
       "text-brand": "#070b11",
       "text-secondaryBrand": "#586571",
-      "bg-secondary": "#F7FAFD",
+      "bg-secondary": "#235784",
       "input-bg": "#E6E6E6",
 
       dark: "#1D3557",

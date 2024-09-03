@@ -1,9 +1,5 @@
-import { NavBar } from "../components/nav-bar/nav-bar";
+import { Home } from "../components";
 
-export const Home = () => {
-  return (
-    <main className="bg-bg-secondary min-h-screen">
-      <NavBar />
-    </main>
-  );
+export const HomePage = () => {
+  return <Home />;
 };

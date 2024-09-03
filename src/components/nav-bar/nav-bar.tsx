@@ -5,7 +5,7 @@ import { Button, NavigateLink, Text } from "../../units";
 
 export const NavBar = React.memo(() => {
   return (
-    <main className="flex justify-between place-items-center p-4 w-full">
+    <main className="flex justify-between  place-items-center   w-full">
       <section id="left-side" className="flex place-items-center ">
         <img src={companyLogo} alt="" className="h-16" />
         <div className="flex flex-col">
