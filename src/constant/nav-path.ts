@@ -8,12 +8,21 @@ export const NavPaths = [
   {
     id: "sisa@a2",
     path: "/",
-    title: "Contact",
+    title: "Favourites",
+    icon: "mdi:heart-outline",
   },
 
   {
     id: "sisa@as3",
     path: "/",
-    title: "About",
+    title: "List your Place",
+    icon: "ph:building-duotone",
+  },
+
+  {
+    id: "sisa@as3sdf",
+    path: "/",
+    title: "Cafe",
+    icon: "fluent:building-shop-20-regular",
   },
 ];

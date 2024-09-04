@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     colors: {
       brand: "#F7FAFD",
+      nav: "#F5EAE7",
+      link: "#565251",
+      primary: "#9C6F44",
+      "input-border": "#dee2e6",
       "bg-brand": "#fff",
       "room-details-bg": "#FEFEFE",
       "text-brand": "#070b11",
@@ -11,7 +15,7 @@ module.exports = {
       "bg-secondary": "#235784",
       "input-bg": "#E6E6E6",
 
-      dark: "#1D3557",
+      dark: "#1d1f28",
       "card-bg-brand": "#FFEEEF",
       hold: "#f69400",
       fav: "#fd7014",
