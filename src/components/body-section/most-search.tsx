@@ -4,7 +4,7 @@ import { RoomDiv } from "../";
 
 export const MostSearch = () => {
   return (
-    <main className="flex flex-col gap-8">
+    <main className="flex flex-col gap-8 z-10">
       <Text classNAME="flex place-self-center" size="header">
         Frequently Searched Room
       </Text>

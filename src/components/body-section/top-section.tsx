@@ -21,10 +21,10 @@ export const TopSection = React.memo(() => {
   };
 
   return (
-    <main className="relative flex -mt-5">
+    <main className=" flex -mt-5">
       <form
         onSubmit={searchLocation}
-        className="bg-brand min-w-[450px] absolute top-52 right-0 p-8 rounded-xl flex gap-4 z-10"
+        className="bg-brand  min-w-[450px] min-h-96  top-52 right-0 p-8 rounded-xl flex gap-4 z-10"
       >
         <InputField
           inputSize="large"
@@ -78,7 +78,7 @@ export const TopSection = React.memo(() => {
           Clear
         </Button>
       </form>
-      <img src={hero} alt="" className="" />
+      {/* <img src={hero} alt="" className="" /> */}
     </main>
   );
 });

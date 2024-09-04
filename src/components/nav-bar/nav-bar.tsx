@@ -7,7 +7,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const NavBar = React.memo(() => {
   return (
-    <main className="flex justify-between bg-nav p-2 place-items-center   w-full">
+    <main className="flex justify-between bg-nav p-2 place-items-center   w-full z-10">
       <section
         id="left-side"
         className="flex px-1 cursor-pointer place-items-center "
