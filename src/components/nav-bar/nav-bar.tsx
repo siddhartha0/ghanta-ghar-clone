@@ -21,7 +21,7 @@ export const NavBar = React.memo(() => {
         </div>
       </section>
 
-      <section id="mid-side" className="flex gap-6 px-1">
+      <section id="mid-side" className="flex gap-9 px-1">
         {NavPaths.map((nav) => (
           <Link
             to={nav.path}
