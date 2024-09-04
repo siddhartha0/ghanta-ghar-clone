@@ -5,3 +5,4 @@ export { Text } from "./text";
 export { InputField } from "./input";
 export { Pagination } from "./pagination";
 export { default as LoaderSpinner } from "./loader-spinner";
+export { ShowData } from "./show-data";
