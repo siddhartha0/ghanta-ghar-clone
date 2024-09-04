@@ -1,84 +1,30 @@
 import React, { useState } from "react";
-import hero from "../../assets/hero.jpg";
-import { Button, InputField, ShowData } from "../../units";
-import { useOutsideClick } from "../../hooks";
-import { LocationData } from "../../constant";
-import UseCalender from "../../units/Calender";
+import { Button } from "../../units";
+import { SearchContainer } from "./search-form";
 
 export const TopSection = React.memo(() => {
-  const [locationDetail, setLocationDetails] = useState("");
-  const [dateValue, setDateValue] = useState("");
-  const [locationDivAlert, setLocationDivAlert] = useState(false);
-  const [dateAlert, setDateAlert] = useState(false);
+  const [title, setTitle] = useState("");
 
-  const closeLocationDiv = useOutsideClick(() => setLocationDivAlert(false));
-
-  const closeDateAlert = useOutsideClick(() => setDateAlert(false));
-
-  const searchLocation = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    alert(`your search result ${locationDetail} couldn't be find`);
+  const chooseStay = (data: string) => {
+    setTitle(data);
   };
 
   return (
-    <main className=" flex -mt-5">
-      <form
-        onSubmit={searchLocation}
-        className="bg-brand  min-w-[450px] min-h-96  top-52 right-0 p-8 rounded-xl flex gap-4 z-10"
-      >
-        <InputField
-          inputSize="large"
-          placeholder="Select your location"
-          value={locationDetail}
-          onChange={(e) => setLocationDetails(e.target.value)}
-          onClick={() => setLocationDivAlert(true)}
-        />
-        {locationDivAlert && (
-          <div className="absolute top-24">
-            <ShowData
-              inputData={locationDetail}
-              setInputData={setLocationDetails}
-              setDivAlert={setLocationDivAlert}
-              ref={closeLocationDiv}
-              datas={LocationData}
-            />
-          </div>
-        )}
-
-        <InputField
-          inputSize="large"
-          placeholder="Arrival Date"
-          onClick={() => setDateAlert(true)}
-          value={dateValue}
-        />
-
-        {dateAlert && (
-          <div className="absolute top-24 left-52">
-            <UseCalender
-              ref={closeDateAlert}
-              date={dateValue}
-              setDateValue={setDateValue}
-              closeDiv={setDateAlert}
-            />
-          </div>
-        )}
-
-        <Button usage="pop-up" type="submit">
-          Search
-        </Button>
-
+    <main className=" flex flex-col relative place-items-center  gap-2 z-10">
+      <header className="flex absolute top-10  bg-ternary p-3 rounded-xl place-items-center gap-2">
         <Button
-          usage="danger"
-          type="button"
-          onClick={() => {
-            setDateValue("");
-            setLocationDetails("");
-          }}
+          outline={true}
+          usage="click"
+          onClick={() => chooseStay("short")}
         >
-          Clear
+          Short Stay
         </Button>
-      </form>
-      {/* <img src={hero} alt="" className="" /> */}
+        <Button outline={true} onClick={() => chooseStay("long")}>
+          Long Stay
+        </Button>
+      </header>
+
+      <SearchContainer title={title} />
     </main>
   );
 });

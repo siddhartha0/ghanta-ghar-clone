@@ -7,6 +7,9 @@ module.exports = {
       nav: "#F5EAE7",
       link: "#565251",
       primary: "#9C6F44",
+      secondary: "#744920",
+      ternary: "#9c6f44",
+      outline: "#86b7fe",
       "input-border": "#dee2e6",
       "bg-brand": "#fff",
       "room-details-bg": "#FEFEFE",
@@ -25,7 +28,7 @@ module.exports = {
       love: "#E72929",
       black: "#0c0c0c",
       "second-brand": "#4F46E5",
-      secondary: "#FFC107",
+      yellow: "#FFC107",
       success: "#26CB17",
 
       other: {

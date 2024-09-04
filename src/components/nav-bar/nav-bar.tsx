@@ -36,7 +36,12 @@ export const NavBar = React.memo(() => {
         ))}
 
         <form className="flex gap-2">
-          <InputField inputSize="small" placeholder="search by hotel" />
+          <InputField
+            inputSize="small"
+            varaint="border-less"
+            outline
+            placeholder="search by hotel"
+          />
           <div className="py-[6px] px-3  rounded-md border border-other-base hover:bg-primary cursor-pointer">
             <Icon icon="ic:baseline-search" fontSize={20} />
           </div>
