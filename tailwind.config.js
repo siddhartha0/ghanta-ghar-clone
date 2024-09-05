@@ -10,6 +10,8 @@ module.exports = {
       secondary: "#744920",
       ternary: "#9c6f44",
       outline: "#86b7fe",
+      white: "#fff",
+
       "input-border": "#dee2e6",
       "bg-brand": "#fff",
       "room-details-bg": "#FEFEFE",
