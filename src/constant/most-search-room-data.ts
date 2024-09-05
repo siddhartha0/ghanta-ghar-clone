@@ -10,6 +10,7 @@ export const MostSearchRoomData = [
     location: "kathmandu, Gaurighat",
     imgUrl: gaurighat,
     price: "350 per hour",
+    rating: 3.5,
   },
 
   {
@@ -18,6 +19,7 @@ export const MostSearchRoomData = [
     location: "kathmandu, Airport",
     imgUrl: airport,
     price: "250 per hour",
+    rating: 2.5,
   },
 
   {
@@ -26,6 +28,7 @@ export const MostSearchRoomData = [
     location: "kathmandu, Tinkune",
     imgUrl: airport1,
     price: "110 per hour",
+    rating: 4,
   },
 
   {
@@ -34,5 +37,6 @@ export const MostSearchRoomData = [
     location: "kathmandu, Gaushala",
     imgUrl: gaushala,
     price: "350 per hour",
+    rating: 5,
   },
 ];

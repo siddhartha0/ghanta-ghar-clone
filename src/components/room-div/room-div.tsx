@@ -1,15 +1,17 @@
 import React from "react";
 import { Text } from "../../units";
+import { ShowStar } from "../../units/show-star";
 
 interface propTypes {
   img: string;
   title: string;
   location: string;
   price: string;
+  rating: number;
 }
 
 export const RoomDiv = React.memo(
-  ({ img, title, location, price }: propTypes) => {
+  ({ img, title, location, price, rating }: propTypes) => {
     return (
       <main className="flex flex-col  p-4 gap-2 bg-white rounded-xl">
         <div
@@ -27,6 +29,7 @@ export const RoomDiv = React.memo(
         <Text size="small" varaint="semi-bold" usage="secondary">
           Rs. {price}
         </Text>
+        <ShowStar length={rating} />
       </main>
     );
   }
