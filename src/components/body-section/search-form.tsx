@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, DropDown, InputField, Text } from "../../units";
+import { Districts, LocationData } from "../../constant";
 
 interface propTypes {
   title: string;
@@ -11,8 +12,8 @@ export const SearchContainer = React.memo(({ title }: propTypes) => {
       {title === "short" && (
         <DropDown options={["Select your purpose", "Fun", "Stay"]} outline />
       )}
-      <DropDown outline options={["Select your District"]} />
-      <DropDown outline options={["Select your Location"]} />
+      <DropDown outline options={Districts} />
+      <DropDown outline options={LocationData} />
 
       <section className="grid grid-cols-3 gap-4 ">
         <div className="flex flex-col gap-1">
