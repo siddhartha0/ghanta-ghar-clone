@@ -7,7 +7,7 @@ interface propTypes {
 
 export const SearchContainer = React.memo(({ title }: propTypes) => {
   return (
-    <main className="flex  flex-col p-16 bg-white w-[1000px]  gap-6 mt-24">
+    <main className="flex  flex-col py-14 px-8 bg-white w-[1200px]  gap-6 mt-24">
       {title === "short" && (
         <DropDown options={["Select your purpose", "Fun", "Stay"]} outline />
       )}
