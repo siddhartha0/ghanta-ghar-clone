@@ -36,7 +36,7 @@ export const Text = React.memo(
 
           "text-text-brand": usage == "brand",
           "text-other-white-100": usage == "primary",
-          "text-text-secondary": usage == "secondary",
+          "text-ternary": usage == "secondary",
           "text-link": usage == "link",
         })}
         {...other}
