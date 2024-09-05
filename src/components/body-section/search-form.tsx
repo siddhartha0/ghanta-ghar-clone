@@ -40,7 +40,8 @@ export const SearchContainer = React.memo(({ title }: propTypes) => {
 
       <Button
         usage="click"
-        classNAME="absolute -bottom-6 place-content-center left-[480px] z-10 flex w-96"
+        size="large"
+        classNAME="absolute -bottom-7 place-content-center left-[480px] z-10 flex w-96"
       >
         Search
       </Button>
