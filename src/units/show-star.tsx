@@ -1,4 +1,3 @@
-import { Star } from "react-feather";
 import { Text } from "./text";
 import React from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";

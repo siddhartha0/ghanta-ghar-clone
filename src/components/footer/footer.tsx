@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin } from "react-feather";
 export const Footer = memo(() => {
   return (
     <main className="flex  bg-primary  px-36 py-4 z-10 flex-col -mt-16 gap-3">
-      <hr className=" border border-white h-[2px] w-[100%]" />
+      <hr className=" border-[.2] border-white    w-[100%]" />
       <header className="flex flex-col gap-1 ">
         <Text usage="primary">Ghantaghar.com</Text>
         <Text usage="primary" size="small">
@@ -57,7 +57,7 @@ export const Footer = memo(() => {
           </Text>
         </div>
       </section>
-      <hr className=" border border-white h-[2px] w-[100%]" />
+      <hr className="border-[.2] border-white  w-[100%]" />
 
       <footer className="flex place-items-center justify-center gap-3 pb-6">
         <Facebook color="white" />
