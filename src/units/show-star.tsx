@@ -34,9 +34,19 @@ export const ShowStar = React.memo(({ length }: propTypes) => {
     <div className="flex  place-items-center">
       {star?.map((data, i) =>
         data.fill === "full" ? (
-          <Star height={18} color="#111" key={i} />
+          <Icon
+            icon="material-symbols:star"
+            height={18}
+            color="#ffd700"
+            key={i}
+          />
         ) : (
-          <Icon icon="fluent:star-half-28-filled" height={18} key={i} />
+          <Icon
+            icon="fluent:star-half-28-filled"
+            height={18}
+            color="#ffd700"
+            key={i}
+          />
         )
       )}
       <Text size="small">{length} star</Text>
