@@ -17,7 +17,9 @@ export const NavBar = React.memo(() => {
           <div className="flex">
             <Text varaint="bold">Ghantaghar.com</Text>
             <sup className="mt-2">
-              <Text size="small">Beta</Text>
+              <Text size="small" varaint="thin">
+                Beta
+              </Text>
             </sup>
           </div>
           <Text size="tiny" classNAME="capitalize">

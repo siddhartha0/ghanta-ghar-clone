@@ -9,7 +9,7 @@ interface propTypes
   size?: "header" | "medium" | "small" | "tiny";
   children: React.ReactNode;
   usage?: "brand" | "primary" | "secondary" | "link";
-  varaint?: "normal" | "bold" | "semi-bold";
+  varaint?: "normal" | "bold" | "semi-bold" | "thin";
   classNAME?: string;
 }
 
@@ -33,6 +33,7 @@ export const Text = React.memo(
           "font-normal": varaint === "normal",
           "font-bold": varaint === "bold",
           "font-semibold": varaint === "semi-bold",
+          "font-thin": varaint === "thin",
 
           "text-text-brand": usage == "brand",
           "text-other-white-100": usage == "primary",
