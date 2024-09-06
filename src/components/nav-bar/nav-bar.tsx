@@ -14,7 +14,12 @@ export const NavBar = React.memo(() => {
       >
         <img src={companyLogo} alt="" className="h-16 " />
         <div className="flex flex-col">
-          <Text varaint="bold">Ghantaghar.com</Text>
+          <div className="flex">
+            <Text varaint="bold">Ghantaghar.com</Text>
+            <sup className="mt-2">
+              <Text size="small">Beta</Text>
+            </sup>
+          </div>
           <Text size="tiny" classNAME="capitalize">
             Nepal's First Hourly Booking platform
           </Text>

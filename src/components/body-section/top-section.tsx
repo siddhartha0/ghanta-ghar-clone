@@ -3,7 +3,7 @@ import { Button } from "../../units";
 import { SearchContainer } from "./search-form";
 
 export const TopSection = React.memo(() => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("short");
 
   const chooseStay = (data: string) => {
     setTitle(data);
