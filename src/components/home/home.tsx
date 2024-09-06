@@ -1,4 +1,4 @@
-import { MostSearch, NavBar, TopSection } from "../";
+import { MostSearch, NavBar, TopSection, Footer } from "../";
 import img from "../../assets/hero.jpg";
 
 export const Home = () => {
@@ -11,6 +11,7 @@ export const Home = () => {
       <NavBar />
       <TopSection />
       <MostSearch />
+      <Footer />
     </main>
   );
 };
